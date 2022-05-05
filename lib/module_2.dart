@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:python_tutorial_app/chapter3.dart';
+import 'package:python_tutorial_app/chapter4.dart';
+import 'package:python_tutorial_app/chapter5.dart';
+import 'package:python_tutorial_app/chapter6.dart';
+import 'package:python_tutorial_app/chapter7.dart';
 import 'package:python_tutorial_app/routes.dart';
 
 class Module2 extends StatelessWidget {
@@ -13,8 +18,66 @@ class Module2 extends StatelessWidget {
         title: Text("PyLearn"),
       ),
       body: Center(
-        child: Container(
-          child: Text("Hello "),
+        child: Column(
+          children: [
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 4"),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.lightBlue,
+                padding: EdgeInsets.all(35),
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter3()));
+              },
+            ),
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 5"),
+
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightBlue,
+                  padding: EdgeInsets.all(35)
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter4()));
+              },
+            ),
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 6"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightBlue,
+                  padding: EdgeInsets.all(35)
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter5()));
+              },
+            ),
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 7"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightBlue,
+                  padding: EdgeInsets.all(35)
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter6()));
+              },
+            ),
+          ],
         ),
       ),
     );

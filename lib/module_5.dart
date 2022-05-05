@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:python_tutorial_app/chapter13.dart';
+import 'package:python_tutorial_app/chapter14.dart';
+import 'package:python_tutorial_app/chapter15.dart';
+import 'package:python_tutorial_app/chapter16.dart';
+import 'package:python_tutorial_app/chapter17.dart';
 import 'package:python_tutorial_app/routes.dart';
 
 class Module5 extends StatelessWidget {
@@ -13,8 +18,55 @@ class Module5 extends StatelessWidget {
         title: Text("PyLearn"),
       ),
       body: Center(
-        child: Container(
-          child: Text("Hello "),
+        child: Column(
+          children: [
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 15"),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.lightBlue,
+                padding: EdgeInsets.all(35),
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter13()));
+              },
+            ),
+            SizedBox(
+              height:50,
+
+            ),
+
+
+            ElevatedButton(
+              child: Text("CHAPTER 16"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightBlue,
+                  padding: EdgeInsets.all(35)
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter14()));
+              },
+
+            ),
+            SizedBox(
+              height:50,
+
+            ),
+            ElevatedButton(
+              child: Text("CHAPTER 17"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.lightBlue,
+                  padding: EdgeInsets.all(35)
+              ),
+              onPressed: (){
+                Navigator.push(context,MaterialPageRoute(builder: (context) => Chapter15()));
+              },
+
+            ),
+          ],
         ),
       ),
     );

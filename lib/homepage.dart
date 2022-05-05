@@ -24,11 +24,11 @@ class HomePage extends StatelessWidget {
             height: 40.0,
           ),
           Image.asset(
-            "assets/images/pylogo2.jpg",
+            "assets/images/pylogo4.png",
             fit: BoxFit.fill,
           ),
           SizedBox(
-            height: 140.0,
+            height: 50.0,
           ),
           /*    ElevatedButton(
               child: Text("Start Learning"),
